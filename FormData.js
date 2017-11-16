@@ -3,7 +3,7 @@
 // @compilation_level ADVANCED_OPTIMIZATIONS
 // ==/ClosureCompiler==
 
-if (!window.FormData || !window.FormData.prototype.keys) {
+if (!window.FormData || !window.FormData.prototype.keys || !('set' in window.FormData)) {
 
   // keep a reference to native implementation
   const _FormData = window.FormData
